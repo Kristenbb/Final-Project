@@ -1,0 +1,11 @@
+Model Information:
+* title:	LCol John McCrae Statue
+* source:	https://sketchfab.com/3d-models/lcol-john-mccrae-statue-8dff4cf3313849289c0d30810a5d8084
+* author:	Ben Frans (https://sketchfab.com/benfrans)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "LCol John McCrae Statue" (https://sketchfab.com/3d-models/lcol-john-mccrae-statue-8dff4cf3313849289c0d30810a5d8084) by Ben Frans (https://sketchfab.com/benfrans) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
