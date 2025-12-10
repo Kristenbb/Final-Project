@@ -1,0 +1,11 @@
+Model Information:
+* title:	Poppy Appeal Box
+* source:	https://sketchfab.com/3d-models/poppy-appeal-box-2bf7fafb314d4f4194e3ed8a94535d7f
+* author:	ar_pi (https://sketchfab.com/ar_pi)
+
+Model License:
+* license type:	CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
+* requirements:	Author must be credited. No commercial use. Modified versions must have the same license.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Poppy Appeal Box" (https://sketchfab.com/3d-models/poppy-appeal-box-2bf7fafb314d4f4194e3ed8a94535d7f) by ar_pi (https://sketchfab.com/ar_pi) licensed under CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
