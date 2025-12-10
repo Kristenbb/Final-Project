@@ -1,0 +1,11 @@
+Model Information:
+* title:	Kriegerdenkmal
+* source:	https://sketchfab.com/3d-models/kriegerdenkmal-67061bef9d2b4ee697f0d5c87912b200
+* author:	noe-3d.at (https://sketchfab.com/www.noe-3d.at)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Kriegerdenkmal" (https://sketchfab.com/3d-models/kriegerdenkmal-67061bef9d2b4ee697f0d5c87912b200) by noe-3d.at (https://sketchfab.com/www.noe-3d.at) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
