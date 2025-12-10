@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Project</title>
+
+    <!--link to a-frame library - CDN -->
+
+    <script src="//aframe.io/releases/1.1.0/aframe.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@7.6.0/dist/aframe-extras.min.js"></script>
+
+    <!--extras library-->
+
+    <!--library for events setting on panels-->
+
+    <script src="https://unpkg.com/aframe-event-set-component@5.x.x/dist/aframe-event-set-component.min.js"></script>
+
+    <!--environment component-->
+
+    <script src="//unpkg.com/aframe-environment-component@1.0.0/dist/aframe-environment-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <!------Preload Assets Here------->
+      <a-assets>
+        <a-asset-item
+          id="trench"
+          src="3DAssets/models/ww1_trench_maununneva_helsinki_finland/scene.gltf"
+        ></a-asset-item>
+
+        <a-asset-item
+          id="trenchMesh"
+          src="3DAssets/models/ww1_trench_maununneva_helsinki_finland/trenchnavmesh.gltf"
+        ></a-asset-item>
+
+        <a-asset-item
+          id="poppyBox"
+          src="3DAssets/models/poppy_appeal_box/scene.gltf"
+        ></a-asset-item>
+
+        <a-asset-item
+          id="memorial"
+          src="3DAssets/models/warmemorial/scene.gltf"
+        ></a-asset-item>
+
+        <a-asset-item
+          id="shell"
+          src="3DAssets/models/artilleryshell/scene.gltf"
+        ></a-asset-item>
+
+        <a-asset-item
+          id="john"
+          src="3DAssets/models/johnstatue/scene.gltf"
+        ></a-asset-item>
+
+        <a-asset-item
+          id="gasMask"
+          src="3DAssets/models/gasmask/scene2.gltf"
+        ></a-asset-item>
+
+        <a-asset-item id="cannon" src="3DAssets/models/ww1_artillery/scene2.gltf"></a-asset-item>
+
+        <a-asset-item id="question" src="3DAssets/models/question_mark/scene.gltf"></a-asset-item>
+
+        <!-----Images----->
+        <img id="poppyposter" src="3DAssets/posters/poster1.png"/>
+
+        <img id="memorialposter" src="3DAssets/posters/poster2.png"/>
+
+        <img id="artilleryposter" src="3DAssets/posters/poster3.png"/>
+
+        <img id="gasposter" src="3DAssets/posters/poster4.png"/>
+
+        <img id="trenchposter" src="3DAssets/posters/poster5.png"/>
+
+        <img id="crossposter" src="3DAssets/posters/poster6.png"/>
+
+        <!----Audio----->
+        <audio id="bgSound" src="3DAssets/audio/sorrowpiano.mp3"></audio>
+        <audio id="clickSound" src="3DAssets/audio/140508__blackstalian__click_sfx2.wav"></audio>
+
+      </a-assets>
+      <!---------Building scene---------->
+      <a-entity
+        gltf-model="#trench"
+        scale="1 1 1"
+        position="-2 -1 5"
+        shadow="recieve:true"
+        
+      ></a-entity>
+      <a-entity
+        gltf-model="#trenchMesh"
+        scale="1 1 1"
+        position="0 0 0"
+        nav-mesh
+        visible="false"
+      ></a-entity>
+      <a-entity
+        gltf-model="#john"
+        position="0.07474 1.902 -19.22587"
+        rotation="0 -46.98 0"
+        scale="0.1 0.1 0.1"
+        event-set__mouseenter="_target:#ring; color:#C060C0; scale: 1.5, 1.5, 1.5;"
+        event-set__mouseleave="_target:#ring; color:#00B7FF; scale: 1, 1, 1;"
+        event-set__click="_target:#posterFrame1; position: -1.260 3.379 -19.222;"
+      ></a-entity>
+      
+      <a-entity
+        gltf-model="#poppyBox"
+        position="-0.69233 1.79387 -18.14978"
+         event-set__mouseenter="_target:#ring; color:#C060C0; scale: 1.5, 1.5, 1.5;"
+        event-set__mouseleave="_target:#ring; color:#00B7FF; scale: 1, 1, 1;"
+        event-set__click="_target:#posterFrame1; position: -1.260 3.379 -19.222;"
+      ></a-entity
+      >
+
+      <a-entity
+        gltf-model="#memorial"
+        position="0.80062 1.76268 -9.39331"
+        rotation="0 200 0"
+        scale="0.1 0.1 0.1"
+         event-set__mouseenter="_target:#ring; color:#C060C0; scale: 1.5, 1.5, 1.5;"
+        event-set__mouseleave="_target:#ring; color:#00B7FF; scale: 1, 1, 1;"
+        event-set__click="_target:#posterFrame2; position: 2.685 3.521 -9.39331;"
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#cannon"
+        position="1.911 1.936 2.246"
+        scale="0.5 0.5 0.5"
+         event-set__mouseenter="_target:#ring; color:#C060C0; scale: 1.5, 1.5, 1.5;"
+        event-set__mouseleave="_target:#ring; color:#00B7FF; scale: 1, 1, 1;"
+        event-set__click="_target:#posterFrame3; position: 3.973 3.2 2.246;"
+      ></a-entity>
+
+      <a-entity gltf-model="#gasMask" 
+      position="1.873 2.24462 12.65815"
+      rotation="0 -180 0"
+       event-set__mouseenter="_target:#ring; color:#C060C0; scale: 1.5, 1.5, 1.5;"
+        event-set__mouseleave="_target:#ring; color:#00B7FF; scale: 1, 1, 1;"
+        event-set__click="_target:#posterFrame4; position: 2.987 2.396 12.65815;"
+      ></a-entity>
+
+      <a-entity gltf-model="#question" 
+      position="3.840 3.096 17.191"
+      rotation="0 205 0"
+      scale="6 6 6"
+      animation="property:position; to: 3.840 3.6 17.191; dir:alternate; dur:2000; loop:true;"
+       event-set__mouseenter="_target:#ring; color:#C060C0; scale: 1.5, 1.5, 1.5;"
+        event-set__mouseleave="_target:#ring; color:#00B7FF; scale: 1, 1, 1;"
+        event-set__click="_target:#posterFrame5; position: 4.522 3.430 16.835;"
+      ></a-entity>
+
+      
+
+    
+      <!----------------Posters----------------->
+      <a-box
+        id="posterFrame1"
+        height="1.5"
+        width="1"
+        position="-1.260 0.356 -19.222"
+        depth="0.01"
+        material="src: #poppyposter;"
+        event-set__mouseenter="_target:#ring; color:green; scale: 1.5, 1.5, 1.5;"
+        event-set__mouseleave="_target:#ring; color:#00B7FF; scale: 1, 1, 1;"
+        event-set__click="position: 2.2 -1 0.3"
+      ></a-box>
+
+       <a-box
+        id="posterFrame2"
+        height="1.5"
+        width="1"
+        position="2.685 0.233 -9.39331"
+        depth="0.01"
+        material="src: #memorialposter;"
+        event-set__mouseenter="_target:#ring; color:green; scale: 1.5, 1.5, 1.5;"
+        event-set__mouseleave="_target:#ring; color:#00B7FF; scale: 1, 1, 1;"
+        event-set__click="position: 2.2 -1 0.3"
+      ></a-box>
+
+      <a-box
+        id="posterFrame3"
+        height="1.5"
+        width="1"
+        position="3.973 0.669 2.246"
+        depth="0.01"
+        material="src:#artilleryposter;"
+        event-set__mouseenter="_target:#ring; color:green; scale: 1.5, 1.5, 1.5;"
+        event-set__mouseleave="_target:#ring; color:#00B7FF; scale: 1, 1, 1;"
+        event-set__click="position: 2.2 -1 0.3"
+      ></a-box>
+
+      <a-box
+        id="posterFrame4"
+        height="1.5"
+        width="1"
+        position="2.987 0.505 12.65815"
+        depth="0.01"
+        material="src:#gasposter;"
+        event-set__mouseenter="_target:#ring; color:green; scale: 1.5, 1.5, 1.5;"
+        event-set__mouseleave="_target:#ring; color:#00B7FF; scale: 1, 1, 1;"
+        event-set__click="position: 2.2 -1 0.3"
+      ></a-box>
+
+      <a-box
+        id="posterFrame5"
+        height="1.5"
+        width="1"
+        position="4.522 1.453 16.835"
+        rotation="0 50 0"
+        depth="0.01"
+        material="src:#trenchposter;"
+        event-set__mouseenter="_target:#ring; color:green; scale: 1.5, 1.5, 1.5;"
+        event-set__mouseleave="_target:#ring; color:#00B7FF; scale: 1, 1, 1;"
+        event-set__click="position: 2.2 -1 0.3"
+      ></a-box>
+
+      <a-box
+        id="posterFrame6"
+        height="1.5"
+        width="1"
+        position="0.36451 3.43 19.89424"
+        rotation="0 132.89 0"
+        depth="0.01"
+        material="src:#crossposter;"
+        event-set__mouseenter="_target:#ring; color:green; scale: 1.5, 1.5, 1.5;"
+        event-set__mouseleave="_target:#ring; color:#00B7FF; scale: 1, 1, 1;"
+      ></a-box>
+
+      <!-----------add a camera----------->
+      <a-entity id="rig" movement-controls="constrainToNavMesh:true">
+        <!-------------Lights--------------->
+        <a-entity light="type:ambient"></a-entity>
+
+        <a-entity light="type: directional" target="#john"></a-entity>
+
+        <!-----------add a camera----------->
+        <a-entity camera position="-9 3 -14" look-controls>
+          <a-cursor
+            id="ring"
+            color="#00B7FF"
+            sound="on:click; src:#clickSound"
+          ></a-cursor>
+        </a-entity>
+      </a-entity>
+
+      <a-sky color="#BE6C7D"></a-sky>
+
+      <!--<<a-entity environment="preset:forest"></a-entity>>----->
+    </a-scene>
+  </body>
+</html>
