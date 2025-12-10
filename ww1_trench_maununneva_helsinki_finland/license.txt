@@ -1,0 +1,11 @@
+Model Information:
+* title:	WW1 trench, Maununneva, Helsinki, Finland
+* source:	https://sketchfab.com/3d-models/ww1-trench-maununneva-helsinki-finland-1e7281f5b9304787933201e3584573f1
+* author:	antti.kekki (https://sketchfab.com/antti.kekki)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "WW1 trench, Maununneva, Helsinki, Finland" (https://sketchfab.com/3d-models/ww1-trench-maununneva-helsinki-finland-1e7281f5b9304787933201e3584573f1) by antti.kekki (https://sketchfab.com/antti.kekki) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
